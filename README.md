@@ -21,6 +21,8 @@ The final trained model is integrated with a **Streamlit** web application for i
 
 ---
 
+🔗 **[Live Demo — Heart Disease Prediction](https://heartdisease-prediction-1.streamlit.app/)**
+
 ## 🤖 Machine Learning Models
 
 The following classification algorithms were implemented and compared:
