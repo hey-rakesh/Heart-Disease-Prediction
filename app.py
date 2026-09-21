@@ -1,18 +1,14 @@
 import streamlit as st
 import pandas as pd
-import joblib 
-import streamlit as st
-import pandas as pd
 import joblib
+from pathlib import Path
+
+BASE_DIR = Path(__file__).resolve().parent
 
 
-
-model = joblib.load(r"D:\jupyter_2\Heart_disease\models\knn_model.pkl")
-
-scaler = joblib.load(r"D:\jupyter_2\Heart_disease\models\knn_scaler.pkl")
-
-column = joblib.load(r"D:\jupyter_2\Heart_disease\models\knn_column.pkl")
-
+model = joblib.load(BASE_DIR / "models" / "knn_model.pkl")
+scaler = joblib.load(BASE_DIR / "models" / "scaler.pkl")
+columns = joblib.load(BASE_DIR / "models" / "columns.pkl")
 
 st.title("Heart Stroke Prediction by Rakesh ❤️")
 st.markdown("Provide the following details...")
