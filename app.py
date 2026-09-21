@@ -5,10 +5,9 @@ from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent
 
-
 model = joblib.load(BASE_DIR / "models" / "knn_model.pkl")
-scaler = joblib.load(BASE_DIR / "models" / "scaler.pkl")
-columns = joblib.load(BASE_DIR / "models" / "columns.pkl")
+scaler = joblib.load(BASE_DIR / "models" / "knn_scaler.pkl")
+column = joblib.load(BASE_DIR / "models" / "knn_column.pkl")
 
 st.title("Heart Stroke Prediction by Rakesh ❤️")
 st.markdown("Provide the following details...")
