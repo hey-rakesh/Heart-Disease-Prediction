@@ -162,11 +162,7 @@ SVM
 Decision Tree
         │
 Naive Bayes
-```
 
-The selected model was then saved using **Joblib** and integrated into the Streamlit application.
-
----
 
 ## 🔮 Future Improvements
 
